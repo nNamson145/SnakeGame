@@ -1,7 +1,12 @@
+# Quản lý các tệp PNG, JPG bằng Git LFS
 *.png filter=lfs diff=lfs merge=lfs -text
-*.C\#[[:space:]]Source filter=lfs diff=lfs merge=lfs -text
-*.META filter=lfs diff=lfs merge=lfs -text
-*JPG filter=lfs diff=lfs merge=lfs -text
-*PNG filter=lfs diff=lfs merge=lfs -text
 *.PNG filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
 *.JPG filter=lfs diff=lfs merge=lfs -text
+
+# Quản lý các tệp META (Unity metadata) bằng Git LFS
+*.META filter=lfs diff=lfs merge=lfs -text
+
+# Quản lý tệp C# code nếu cần (mặc dù thường không dùng Git LFS cho mã nguồn)
+*.cs filter=lfs diff=lfs merge=lfs -text
+
